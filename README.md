@@ -18,13 +18,13 @@ Easily deploy Dart functions as Cloud Run services on Google Cloud Platform.
    ```sh
    gcloud auth login
    ```
-3. Create a `deploy.env` file in the project root with the following content:
-   ```env
-   CLOUD_FUNCTION_NAME=
-   PROJECT_ID=
-   REGION=europe-west1
-   PORT=8080
+3. Copy the example environment file and adjust it to your needs:
+   ```sh
+   cp deploy.env.example deploy.env
+   # Edit deploy.env and fill in your values
    ```
+   Each variable in `deploy.env` is explained in the file and in the section below.
+
    - **CLOUD_FUNCTION_NAME**: The name for your Cloud Run service (e.g. `my-dart-function`).
    - **PROJECT_ID**: Your Google Cloud project ID (e.g. `my-gcp-project`).
    - **REGION**: The deployment region. Choose one of the following recommended defaults:
