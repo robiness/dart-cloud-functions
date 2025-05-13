@@ -14,10 +14,9 @@ Easily deploy Dart functions as Cloud Run services on Google Cloud Platform.
    git clone https://github.com/robiness/dart-cloud-functions.git
    cd dart-cloud-functions
    ```
-2. Authenticate and set your Google Cloud project:
+2. Authenticate and set your Google Cloud project if not already done:
    ```sh
    gcloud auth login
-   gcloud config set project <YOUR_PROJECT_ID>
    ```
 3. Adjust deployment settings in `cloudbuild.yaml` under `substitutions`:
    ```yaml
