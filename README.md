@@ -33,14 +33,6 @@ Easily deploy Dart functions as Cloud Run services on Google Cloud Platform.
      - Asia: `asia-northeast1` (Tokyo), `asia-southeast1` (Singapore)
    - **PORT**: The port your function listens on (default: `8080`).
 
-   Example for Europe:
-   ```env
-   CLOUD_FUNCTION_NAME=my-dart-function
-   PROJECT_ID=my-gcp-project
-   REGION=europe-west1
-   PORT=8080
-   ```
-
 4. Deploy to Cloud Run:
    ```sh
    ./deploy.sh
